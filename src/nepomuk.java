@@ -24,4 +24,8 @@ public class nepomuk {
 	public void test3(){
 		assertFalse(simple_example.isWellSorted(new String[]{"A","A","A","A"}));
 	}
+	@Test
+	public void test4(){
+		assertFalse(complex_graph.isWellSorted(new String[]{"A","B","C","G","F","F","F"}));
+	}
 }
