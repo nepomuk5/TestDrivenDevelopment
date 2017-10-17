@@ -20,4 +20,8 @@ public class nepomuk {
 	public void test2(){
 		assertFalse(simple_cycle.isWellSorted(new String[]{}));
 	}
+	@Test
+	public void test3(){
+		assertFalse(simple_example.isWellSorted(new String[]{"A","A","A","A"}));
+	}
 }
