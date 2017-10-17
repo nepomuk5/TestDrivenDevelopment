@@ -13,19 +13,19 @@ public class nepomuk {
 	new String[][]{{"A", "C"}, {"C", "D"}, {"B", "C"},{"A", "E"}, {"B", "F"}, {"E", "G"},{"D", "G"}, {"F", "G"}, {"C", "E"},{"C", "F"}});
 	}
 	@Test
-	public void test1(){
+	public void isWellSorted_simpleExample_False(){
 		assertFalse(simple_example.isWellSorted(new String[]{"B","D","C"}));
 	}
 	@Test
-	public void test2(){
+	public void isWellSorted_simpleCycle_False(){
 		assertFalse(simple_cycle.isWellSorted(new String[]{}));
 	}
 	@Test
-	public void test3(){
+	public void isWellSorted_simpleExample_False_OnlyA(){
 		assertFalse(simple_example.isWellSorted(new String[]{"A","A","A","A"}));
 	}
 	@Test
-	public void test4(){
+	public void isWellSorted_complexGraph_False(){
 		assertFalse(complex_graph.isWellSorted(new String[]{"A","B","C","G","F","F","F"}));
 	}
 }
