@@ -31,7 +31,6 @@ public class nepomuk {
 	@Test
 	public void test_simple_example_3() {
 	assertFalse(simple_example.isWellSorted(new String[]{"D", "C", "B", "A"}));
-	Copy Style
 	}
 	@Test
 	public void test_simple_example_4() {
@@ -86,10 +85,10 @@ public class nepomuk {
 	}
 	@Test
 	public void test_complex_graph_1() {
-	assertTrue(complex_graph.isWellSorted(new String[]{"A","B","C","D","E","F"
+	assertTrue(complex_graph.isWellSorted(new String[]{"A","B","C","D","E","F"}));
 	}
 	@Test
 	public void test_complex_graph_2() {
-	assertFalse(complex_graph.isWellSorted(new String[]{"A","B","F","D","E","C"
+	assertFalse(complex_graph.isWellSorted(new String[]{"A","B","F","D","E","C"}));
 	}
 }
