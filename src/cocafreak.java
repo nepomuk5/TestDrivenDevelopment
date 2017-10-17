@@ -17,6 +17,11 @@ public class cocafreak {
 			temp1 = m_string[i][0];
 			temp2 = m_string[i][1];
 			
+			if(sequence.length==0)
+			{
+				return false;
+			}
+			
 			for(int k = 0 ; k<sequence.length ; k++){
 				if(sequence[k]==temp2){
 					for(int j = 0; j<=k;){
