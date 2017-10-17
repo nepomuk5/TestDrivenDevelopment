@@ -12,15 +12,27 @@ public class cocafreak {
 		String temp1;
 		String temp2;
 		
+		if(sequence.length==0)
+		{
+			return false;
+		}
+		temp1 = sequence[0];
+		
+		for(int i = 0; i<=sequence.length; ){
+			if(i==sequence.length){
+				return false;
+			}
+			else if(sequence[i] == sequence[0]){
+				i++;
+			}
+			else {
+				break;
+			}
+		}
 			
 		for(int i = 0 ; i < m_string.length ; i++ ){
 			temp1 = m_string[i][0];
 			temp2 = m_string[i][1];
-			
-			if(sequence.length==0)
-			{
-				return false;
-			}
 			
 			for(int k = 0 ; k<sequence.length ; k++){
 				if(sequence[k]==temp2){
@@ -37,10 +49,7 @@ public class cocafreak {
 				}
 			}
 		}
-		
-		
-		
 		return true;
-}
+	}
 	
 }
